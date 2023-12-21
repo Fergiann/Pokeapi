@@ -1,0 +1,208 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+header{
+    margin: 30px;
+    width: 100vw;
+    height: 200px;
+}
+
+.pokedex{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 400%;
+}
+
+
+input{
+    position: relative;
+    left: 650px;
+    bottom: 50px;
+    text-align: center;
+}
+
+.pokebolaUno{
+    position: relative;
+    left: 200px;
+    width: 10%;
+    height: 45%;
+}
+
+.pokebolaDos{
+    position: relative;
+    left: 550px;
+    width: 10%;
+    height: 45%;
+}
+
+body{
+    background-color: plum;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flipCard {
+    width: 320px;
+    height: 300px;
+    perspective: 1000px; 
+    margin: 20px;
+  }
+
+.flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+.flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+  }
+
+.divPokemon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: aquamarine;
+    border-style: solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.divTexto{
+    position: relative;
+    top: 210px;
+}
+
+.imagenGrande{
+    width: 50%;
+    position: relative;
+    bottom: 45px;
+}
+
+.flipCardBack{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: rgb(40, 185, 129);
+    transform: rotateY(180deg);
+    border-style: solid;
+    border-radius: 8px;
+    
+}
+
+.imagenPequeña{
+    position: relative;
+    top: 20px;
+}
+
+.statDescription{
+    position: relative;
+    bottom: -30px;
+    padding: 5px;
+    text-align: center;
+    white-space: pre-line;
+    text-transform: uppercase;
+}
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    left: 750px;
+    width: 80px;
+    height: 80px;
+}
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+@keyframes lds-roller {
+    0% {
+transform: rotate(0deg);
+    }
+    100% {
+transform: rotate(360deg);
+    }
+}
+
+.hidden{
+    display: none;
+}
